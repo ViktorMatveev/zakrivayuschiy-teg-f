@@ -419,7 +419,7 @@
   opacity: 0.75;
 }
 
-.dialog {
+.dialog[open] {
   position: fixed;
   inset: 0;
   display: flex;
