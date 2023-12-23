@@ -20,7 +20,7 @@
   inline-size: 100%;
   min-block-size: 100dvb;
   background-color: var(--main-color, #fff);
-  font-family: 'Inter-Variable', Arial, sans-serif;
+  font-family: var(--font-family-main), Arial, sans-serif;
   color: var(--accent-color, #000);
   font-size: var(--main-font-size, 18px);
   background-image: repeating-linear-gradient(
@@ -56,7 +56,7 @@
   margin-block-end: 104px;
   padding-block-start: clamp(120px, 20%, 136px);
   padding-block-end: 25px;
-  font-family: 'PressStart2P';
+  font-family: var(--font-family-accent), sans-serif;
   text-transform: uppercase;
   background-color: var(--main-color);
   outline: 2px solid var(--accent-color);
@@ -109,6 +109,8 @@
 .theme-menu__button:disabled:before {
   content: '▶';
   position: absolute;
+  top: 0;
+  left: 0;
   color: var(--accent-color);
   opacity: 0.6;
   inline-size: 16px;
@@ -127,10 +129,11 @@
 .theme-menu__button::after {
   content: '';
   position: absolute;
+  top: 15px;
+  left: 6px;
   display: block;
   width: calc(100% - 13px);
   height: 2px;
-  margin-top: 1px;
   background-color: var(--accent-color);
   opacity: 0.6;
   transform: scaleX(0);
@@ -163,8 +166,7 @@
 }
 
 .card__title {
-  min-height: 33px;
-  padding-block: 5px;
+  padding-block: 6px;
   padding-inline-start: 10px;
   font-size: var(--main-font-size);
   font-variation-settings: 'wght' var(--title-font-weight, 700);
@@ -176,7 +178,7 @@
 
 @supports (font-variation-settings: 'wght' var(--title-font-weight)) {
   .card__title {
-    font-family: 'Inter-Variable', sans-serif;
+    font-family: var(--font-family-main), sans-serif;
   }
 }
 
@@ -198,7 +200,7 @@
   position: absolute;
   top: 27px;
   right: 27px;
-  font-family: 'PressStart2P';
+  font-family: var(--font-family-accent), sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   mix-blend-mode: hard-light;
@@ -233,7 +235,7 @@
 
 @supports (font-variation-settings: 'wght' var(--main-font-weight)) {
   .card__text {
-    font-family: 'Inter-Variable', sans-serif;
+    font-family: var(--font-family-main), sans-serif;
   }
 }
 
@@ -294,45 +296,45 @@
 
 .like-icon:hover .core {
   fill: var(--accent-color);
-  transition: fill linear 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
-  transition: linear 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:active .core {
   fill: var(--heart-main-color);
-  transition: fill linear 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
   fill: var(--heart-main-color);
-  transition: linear 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-main-color);
-  transition: fill linear 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-main-color);
-  transition: linear 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-main-color);
-  transition: linear 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
 }
 
-.like-icon.like-icon.is-liked .heart {
+.like-icon.is-liked .heart {
   animation: heart-scale 0.1s ease-in 0.3s alternate;
   transform-origin: center;
 }
 
-.like-icon.like-icon.is-liked .sparks {
+.like-icon.is-liked .sparks {
   animation: heart-sparks 0.3s ease-in 0.3s;
 }
 
@@ -376,7 +378,7 @@
 }
 
 .button__text {
-  font-family: 'PressStart2P';
+  font-family: var(--font-family-accent), sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--btn-font-color);
@@ -425,7 +427,7 @@
   display: flex;
   flex-direction: column;
   padding: 32px;
-  font-family: 'PressStart2P';
+  font-family: var(--font-family-accent), sans-serif;
   width: clamp(345px, 90%, 361px);
   border: 2px solid var(--accent-color);
   background-color: var(--main-color);
@@ -464,7 +466,7 @@
 }
 
 .dialog__text {
-  font-family: 'PressStart2P';
+  font-family: var(--font-family-accent), sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--btn-font-color);
@@ -476,9 +478,6 @@
 }
 
 @media (max-width: 375px) {
-  :root {
-    --header-title-font-size: clamp(2.5rem, 1.8571rem + 5.1429vw, 3.0625rem);
-  }
   .card__tag {
     right: 11px;
   }

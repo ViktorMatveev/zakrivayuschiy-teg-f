@@ -14,3 +14,9 @@
   --btn-font-color: #fff;
   --heart-main-color: #ff0000;
 }
+
+@media (max-width: 375px) {
+  :root {
+    --header-title-font-size: clamp(2.5rem, 1.8571rem + 5.1429vw, 3.0625rem);
+  }
+}

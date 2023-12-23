@@ -6,8 +6,6 @@
 */
 
 :root.theme-dark {
-  --font-family-main: 'Inter-Variable';
-  --font-family-accent: 'PressStart2P';
   --main-color: #000;
   --accent-color: #00cc14;
   --title-font-weight: 785;
@@ -21,8 +19,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-family-main: 'Inter-Variable';
-    --font-family-accent: 'PressStart2P';
     --main-color: #000;
     --accent-color: #00cc14;
     --title-font-weight: 785;
@@ -36,8 +32,6 @@
 }
 
 :root.theme-light {
-  --font-family-main: 'Inter-Variable';
-  --font-family-accent: 'PressStart2P';
   --main-color: #fff;
   --accent-color: #000;
   --title-font-weight: 700;
@@ -51,8 +45,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --font-family-main: 'Inter-Variable';
-    --font-family-accent: 'PressStart2P';
     --main: #fff;
     --accent-color: #000;
     --title-font-weight: 700;
