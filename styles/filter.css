@@ -1,0 +1,43 @@
+/* --IMG-FILTRES-- */
+
+.filter {
+  transition: 0.5s ease;
+}
+
+.filter-blur {
+  filter: blur(5px);
+  overflow: hidden;
+}
+
+.filter-sepia {
+  filter: sepia(0.6);
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.filter-invert {
+  filter: invert(0.8);
+}
+
+.filter-saturate {
+  filter: saturate(2);
+}
+
+.filter-contrast {
+  filter: contrast(1.5);
+}
+
+.filter-opacity {
+  filter: opacity(0.7);
+}
+
+.filter-mix {
+  filter: blur(5px) contrast(1.5);
+  overflow: hidden;
+}
+
+.filter:hover {
+  filter: none;
+}

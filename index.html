@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/filter.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <meta name="color-scheme" content="light dark" />
     <script src="./scripts/set-theme.js"></script>
   </head>
+
   <body class="page">
-    <header class="header">
+    <header class="header container">
+      <h1 class="header__title">&lt;/html&gt;</h1>
+      <h2 class="header__sublitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +48,601 @@
         </ul>
       </nav>
     </header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
+    <main class="content container">
+      <ol class="content__list">
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/change.avif" type="image/avif" />
+                <source srcset="./images/change.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-blur"
+                  src="./images/change.jpg"
+                  alt="Время для перемен"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;время открытий&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__text">
+                Спустя долгое мремя раздумий и сомнений было принято решение
+                освоить новую профессию frontend-разработчика.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/start.avif" type="image/avif" />
+                <source srcset="./images/start.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-sepia"
+                  src="./images/start.png"
+                  alt="Мальчик в начале пути"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;первые шаги&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                На первых этапах мы работали со страхами и сомнениями, которые
+                часто испытывают новички. Один из них — страх перед чистым
+                листом. Это, конечно же, намного сложнее, чем боязнь куска
+                бумаги. Часто за этим ощущением скрываются более глубокие
+                вопросы: с чего начать? а вдруг будет слишком сложно? что, если
+                я не справлюсь?
+              </p>
+              <p class="card__text">
+                Я был весь в предвкушении начала полноценной учебы и получения
+                новых знаний.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">1 спринт: А если не получится?</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/little_win.avif" type="image/avif" />
+                <source srcset="./images/little_win.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-grayscale"
+                  src="./images/little_win.jpg"
+                  alt="Мальчик радуется маленькой победе"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;первая победа&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                Первый проект — позади! Но это всё ещё самое начало пути.
+                Радость могла быстро померкнуть и смениться ожиданием провала.
+                Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+              </p>
+              <p class="card__text">
+                Первый успешно сданный проект прибавил уверенности в том, что я
+                на правильном пути.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/mountain.avif" type="image/avif" />
+                <source srcset="./images/mountain.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-invert"
+                  src="./images/mountain.jpg"
+                  alt="Мужчина поднимается в горы"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;постигаем неизведанное&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                На этом этапе вы уже достаточно разбирались в основах вёрстки,
+                чтобы понять, как много ещё впереди. Вы могли попытаться
+                погнаться за идеалом и понять, что он недостижим. А, может, вы
+                вовсе и не подвержены перфекционизму и вместо того, чтобы
+                сделать идеально, старались просто сделать.
+              </p>
+              <p class="card__text">
+                Хочется сразу сделать все идеально, но нехватка знаний пока не
+                позволяли этого. С каждой прочитанной темой горизонт знаний
+                постепенно расширялся и все больше приходило понимание: сколько
+                еще вспереди нового и интересного
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/support.avif" type="image/avif" />
+                <source srcset="./images/support.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-saturate"
+                  src="./images/support.jpg"
+                  alt="Парень взбирается на скалу, а друзья его поддерживают"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;ты сможешь!&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                Всё это время вы были не одиноки (хотя, возможно, иногда и
+                чувствовали, что одни против целого мира). Вас окружали
+                одногруппники, команда сопровождения и просто близкие люди,
+                которым можно пожаловаться, если очередной макет просто так не
+                поддавался. Осваивать что-то новое легче, когда рядом есть
+                единомышленники, не правда ли?
+              </p>
+              <p class="card__text">
+                Не знаю, как бы я с этим спралялся без поддержки самого близкого
+                человека.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/lamp.avif" type="image/avif" />
+                <source srcset="./images/lamp.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-contrast"
+                  src="./images/lamp.jpg"
+                  alt="Девушка держит лампочку"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;а если так?&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                На этом курсе вы постоянно решали разные задачи. В какой-то
+                момент вам могло показаться, что решения просто иссякли. Значит,
+                пришло время посмотреть на задачу под другим углом.
+              </p>
+              <p class="card__text">
+                В процессе учебы не все получалось с первого раза. И решение,
+                которое казалось бы идеальным, совсем таковым не было. Но после
+                перечитывания лекций и непродолжительных рефлексий обязательно
+                приходили новые идеи.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+            <div class="card__picture">
+              <picture>
+                <source
+                  srcset="./images/concentration.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./images/concentration.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="card__image filter filter-opacity"
+                  src="./images/concentration.jpg"
+                  alt="Мальчик сосредоточен на учебе"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;не спеши&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                Во время учёбы часто возникает чувство, когда не знаешь, за что
+                хвататься. Вроде и проектную пора сдавать, и задачи хочется
+                порешать, и в теории получше разобраться, и жизнь не забыть
+                пожить. В такие моменты очень нужна концентрация. Вспомните,
+                откуда вы её черпали.
+              </p>
+              <p class="card__text">
+                Сомневаться можно при выборе цели. А когда она выбрана - нужно
+                просто действовать. Концентрация и силы приходят сами собой,
+                если знаешь для чего ты это делаешь.
+              </p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="content__item">
+          <article class="card">
+            <h2 class="card__title">«Сейчас я здесь»</h2>
+            <div class="card__picture">
+              <picture>
+                <source srcset="./images/finish.avif" type="image/avif" />
+                <source srcset="./images/finish.webp" type="image/webp" />
+                <img
+                  class="card__image filter filter-mix"
+                  src="./images/finish.jpg"
+                  alt="Надпись: You got this"
+                  loading="lazy"
+                />
+              </picture>
+              <p class="card__tag">&lt;to be contined...&gt;</p>
+            </div>
+            <div class="card__discription">
+              <p class="card__text">
+                Сейчас вы уже очень много знаете о вёрстке. Но это только
+                начало. Во-первых, впереди ещё много материала про «красотищу».
+                Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка —
+                это целый мир. И этот мир постоянно меняется. Познать его
+                полностью не получится, но это тот случай, когда важен сам
+                процесс познания. Ведь часто путь — и есть результат.
+              </p>
+              <p class="card__text">
+                Блок верстки почти завершен. Впереди ждет JavaScript, который,
+                чувствую, принесет много "веселья" в дальнейшую учебу.
+              </p>
+              <p class="card__text">Дальше - больше!</p>
+              <div class="card__like">
+                <button class="card__icon-button">
+                  <svg
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--accent-color)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--heart-main-color)"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button content__button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </main>
+    <footer class="footer container">
+      <button
+        class="save__button content__button"
+        type="button"
+        onclick="window['dialog-save'].showModal();"
+        aria-controls="dialog-save"
+      >
+        <svg class="button-icon">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog class="dialog" id="dialog-save">
+        <div class="dialog__discription">
+          <svg class="dialod__icon">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          class="dialog__button content__button"
+          type="button"
+          onclick="window['dialog-save'].close();"
+        >
+          <span class="button__text">Ok</span>
+        </button>
+      </dialog>
+      <script src="./scripts/like.js"></script>
+    </footer>
   </body>
 </html>
